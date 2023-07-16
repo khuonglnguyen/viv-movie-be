@@ -1,0 +1,29 @@
+{
+  "dependencies": {
+    "storage1": {
+      "ignored": "true",
+      "type": "storage"
+    },
+    "secrets1": {
+      "ignored": "true",
+      "type": "secrets"
+    },
+    "apis1": {
+      "ignored": "true",
+      "type": "apis.azure"
+    },
+    "appInsights1": {
+      "ignored": "true",
+      "type": "appInsights",
+      "connectionId": "APPLICATIONINSIGHTS_CONNECTION_STRING",
+      "dynamicId": null
+    },
+    "mssql1": {
+      "secretStore": "AzureAppSettings",
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourcegroups/[parameters('resourceGroupName')]/providers/Microsoft.Sql/servers/moviesapi2dbserver/databases/MoviesAPI_db2",
+      "type": "mssql.azure",
+      "connectionId": "ConnectionStrings:DefaultConnection",
+      "dynamicId": null
+    }
+  }
+}
